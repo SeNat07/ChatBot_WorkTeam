@@ -1,0 +1,90 @@
+{
+    "project": {
+        "id": "zb-cailapub",
+        "name": "zb-cailapub",
+        "folder": "/"
+    },
+    "settings": {
+        "language": "ru",
+        "spellingCorrection": false,
+        "classificationAlgorithm": "sts",
+        "timezone": "Europe/Moscow",
+        "extendedSettings": {
+      "tokenizerEngine": "mystem",
+            "useShared": false
+        }
+    },
+    "intents": [
+        {
+            "path": "/пока",
+            "description": null,
+            "answer": null,
+            "customData": null,
+            "enabled": true,
+            "phrases": [
+                {
+                    "text": "пока",
+                    "entities": null
+                }
+            ],
+            "patterns": null,
+            "slots": null
+        },
+        {
+            "path": "/привет",
+            "description": null,
+            "answer": null,
+            "customData": null,
+            "enabled": true,
+            "phrases": [
+                {
+                    "text": "привет",
+                    "entities": null
+                }
+            ],
+            "patterns": null,
+            "slots": null
+        }
+    ],
+    "entities": [],
+    "enabledSystemEntities": [
+        "duckling.number",
+        "duckling.time",
+        "duckling.duration",
+        "duckling.phone-number",
+        "duckling.email",
+        "duckling.url"
+    ],
+    "systemEntities": [
+        {
+            "name": "duckling.number",
+            "version": "v2",
+            "enabled": true
+        },
+        {
+            "name": "duckling.time",
+            "version": "v2",
+            "enabled": true
+        },
+        {
+            "name": "duckling.duration",
+            "version": "v2",
+            "enabled": true
+        },
+        {
+            "name": "duckling.phone-number",
+            "version": "v2",
+            "enabled": true
+        },
+        {
+            "name": "duckling.email",
+            "version": "v2",
+            "enabled": true
+        },
+        {
+            "name": "duckling.url",
+            "version": "v2",
+            "enabled": true
+        }
+    ]
+}
