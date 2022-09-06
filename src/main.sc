@@ -85,28 +85,46 @@ theme: /
             
     state: Rezult_Nastya
         a: Я угадал! Ты - Настя Фролова!  
+        go!: /Return
     
     state: Rezult_Natasha
         a: Я угадал! Ты - Наташа Седых!
+        go!: /Return
         
     state: Rezult_Liza
         a: Я угадал! Ты - Лиза Воронкова!
+        go!: /Return
 
     state: Rezult_AlexA
         a: Я угадал! Ты - Лёша Иванов!
+        go!: /Return
         
     state: Rezult_AlexR
         a: Я угадал! Ты - Лёша Рябов!
+        go!: /Return
         
     state: Rezult_AndreyA
         a: Я угадал! Ты - Андрей Афанасьев!
+        go!: /Return
         
     state: Rezult_AndreyK
         a: Я угадал! Ты - Андрей Кац!
+        go!: /Return
 
+    state: Return
+        a: Хочешь попробовать ещё раз?
+        
+        state: ReturnYes
+            q!: *(да/ага/*давай*/ещ*)*
+            go!: /Question_1
+        
+        state: ReturnNo
+            q!: *(не*)*
+            go!: /Bye
+        
     state: Bye
         intent!: /пока
-        a: Пока пока
+        a: Пока, мой милый друг
 
     state: NoMatch
         event!: noMatch
