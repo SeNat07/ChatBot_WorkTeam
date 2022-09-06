@@ -15,7 +15,7 @@ theme: /
         a: Ты девушка или мужчина?
         buttons:
             "Девушка" -> /Question_w2      
-            "Мужчина" -> /
+            "Мужчина" -> /Question_m2
     
     state: Question_w2
         a: Ты знаешь ABBYY на 10/10?
@@ -47,20 +47,62 @@ theme: /
             "Да" -> /Rezult_Liza
             "Нет" -> /Question_w2         
             
+    state: Question_m2
+        a: Ты скоро уходишь в отпуск?
+        buttons:
+            "Да" -> /Question_m31
+            "Нет" -> /Question_m32
             
+    state: Question_m31
+        a: Ты часто выезжаешь на выходных на природу?
+        buttons:
+            "Да" -> /Rezult_AlexA
+            "Нет" -> /Question_m32        
+    
+    state: Question_m32
+        a: Ты катался на "яхте" о Волге?
+        buttons:
+            "Да" -> /Question_m41
+            "Нет" -> /Question_m42              
+    
+    state: Question_m41
+        a: У тебя есть айфоны на даче?
+        buttons:
+            "Да" -> /Rezult_AlexR
+            "Нет" -> /Question_m42          
             
-            
-            
-            
+    state: Question_m42
+        a: Тебя зовут Андрей?
+        buttons:
+            "Да" -> /Question_m51
+            "Нет" -> /Question_m32         
+
+    state: Question_m51
+        a: У тебя есть борода?
+        buttons:
+            "Да" -> /Rezult_AndreyA
+            "Нет" -> /Rezult_AndreyK            
             
     state: Rezult_Nastya
-        a: Я угадал! Ты - Настя!  
+        a: Я угадал! Ты - Настя Фролова!  
     
     state: Rezult_Natasha
-        a: Я угадал! Ты - Наташа!
+        a: Я угадал! Ты - Наташа Седых!
         
     state: Rezult_Liza
-        a: Я угадал! Ты - Лиза!
+        a: Я угадал! Ты - Лиза Воронкова!
+
+    state: Rezult_AlexA
+        a: Я угадал! Ты - Лёша Иванов!
+        
+    state: Rezult_AlexR
+        a: Я угадал! Ты - Лёша Рябов!
+        
+    state: Rezult_AndreyA
+        a: Я угадал! Ты - Андрей Афанасьев!
+        
+    state: Rezult_AndreyK
+        a: Я угадал! Ты - Андрей Кац!
 
     state: Bye
         intent!: /пока
