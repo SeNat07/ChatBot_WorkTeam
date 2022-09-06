@@ -60,7 +60,7 @@ theme: /
             "Нет" -> /Question_m32        
     
     state: Question_m32
-        a: Ты катался на "яхте" о Волге?
+        a: Ты катался на "яхте" по Волге?
         buttons:
             "Да" -> /Question_m41
             "Нет" -> /Question_m42              
