@@ -124,7 +124,7 @@ theme: /
         
     state: Bye
         intent!: /пока
-        a: Пока, мой милый друг
+        a: Тогда прощай, мой милый друг
 
     state: NoMatch
         event!: noMatch
